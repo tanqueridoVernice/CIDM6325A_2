@@ -3,7 +3,7 @@
 # Entity relationship diagrams
 
 ## Conceptual
-
+This diagram shows the relationships of colleges, departments, the degrees each department offers, courses the different departments are offering and what courses are required for degree completion, and student information such as the degree they are pursuing and the courses they have taken.
 ```mermaid
 erDiagram
     COLLEGE ||--|{ DEPARTMENT : has
@@ -15,6 +15,7 @@ erDiagram
 ```
 
 ## Logical
+This diagram shows a more detailed version of the conceptual diagram. It includes the different attributes for each object and it also breaks down the many-to-many relationships we saw earlier on the conceptual diagram.
 
 ```mermaid
   erDiagram
@@ -74,7 +75,7 @@ STUDENT ||--|{ ENROLLED_IN : " "
     COURSE ||--|{ ENROLLED_IN : " "
 ```
 ## Physical
-
+This diagram shows the data type of each attribute and also indicates which ones are the primary and foreign keys.
 ```mermaid
   erDiagram
     COLLEGE ||--|{ DEPARTMENT :" "
